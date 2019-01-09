@@ -473,7 +473,7 @@ function notexture(){
 
 //set the texture, which determines the material of the geometry we create
 function drape(){
-    texture="./image/square-outline-textured.png";
+    texture="../image/square-outline-textured.png";
 }
 function water(){
     texture="../image/water.jpg";
