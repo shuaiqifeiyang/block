@@ -292,11 +292,13 @@ function onDocumentMouseDown( event ) {
                 })
             }else if(type==="bigger"){
                 var previous=intersect.object.scale;
-                intersect.object.scale.set(previous.x + 1,previous.x + 1, previous.x + 1 );
+                if(intersect.object!==plane){
+                    intersect.object.scale.set(previous.x + 1,previous.x + 1, previous.x + 1 );
+                }
             }else if(type==="smaller"){
                 var previous=intersect.object.scale;
                 console.log(previous);
-                if(previous.x>1 && previous.y>1 && previous.z>1){
+                if(intersect!==plane && previous.x>1 && previous.y>1 && previous.z>1){
                     intersect.object.scale.set(previous.x -1 ,previous.x - 1, previous.x - 1 );
                 }
             }
