@@ -130,10 +130,8 @@ function onDocumentMouseDown( event ) {
 
         //press the Shift and the Alt at th same time
         if(isRotate && isShiftDown){
-            if(intersect.object!==plane){
-            	selected=intersect.object;
-            }
-            
+
+            selected=intersect.object;
         } else if(isRotate && !isShiftDown){ //just press the Alt
             if ( intersect.object !== plane ) {
                 intersect.object.rotateY(Math.PI/2);
@@ -446,7 +444,10 @@ function render(select) {
 
     //when the shift and the alt is pressed at the same time, the object rotate
     if(isShiftDown && isRotate){
-        selected.rotateY(0.01);
+        if(selected!==plane){
+            selected.rotateY(0.01);
+        }
+        
         requestAnimationFrame(render);
     }
 
