@@ -40,5 +40,5 @@ play it [here](https://zjulzy.github.io/block/src/mainpage.html)!
 
 :cherry_blossom:**可以实现的简单效果**
 
-![](./Image/result1.png)
+![](https://github.com/zjulzy/block/blob/master/image/result1.PNG?raw=true)
 
