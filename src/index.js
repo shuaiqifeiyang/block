@@ -130,7 +130,10 @@ function onDocumentMouseDown( event ) {
 
         //press the Shift and the Alt at th same time
         if(isRotate && isShiftDown){
-            selected=intersect.object;
+            if(intersect.object!==plane){
+            	selected=intersect.object;
+            }
+            
         } else if(isRotate && !isShiftDown){ //just press the Alt
             if ( intersect.object !== plane ) {
                 intersect.object.rotateY(Math.PI/2);
