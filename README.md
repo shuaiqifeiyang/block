@@ -4,41 +4,32 @@ play it [here](https://zjulzy.github.io/block/src/mainpage.html)!
 
 
 
-:warning:打开之后要确认以下几点：
+The layout of the page is like this:
 
-1. **缩放页面大小**，缩放页面大小后，理想中的显示效果如下：
+![](./image/page.png):warning: Please make sure your input now is English input, otherwise the operation involving the keyboard is invalid.
 
-![](./image/page.png)
+:four_leaf_clover:**How to start**
 
-2. 确保此时用的是**英文输入法**，不然接下来的按键操作将全部失效
+When your mouse moves in the canvas, there is a red cube following your cursor, left click your mouse, you will see an object show up in your canvas. It's really simple. Here are some other operation involving keyboard.
 
-3. 建议**打开页面后先调整一下环境光，按’-’减弱环境光**，这样会使效果更加明显。
+Change the view: w a s d
 
-  
+Delete object: press Shift + click the object
 
-:four_leaf_clover:**键盘对应的功能**
+Rotate object by 90°: press Alt + click the object
 
-​       删除物体：按住Shift再用鼠标点击想删除的物体
+Rotate object: press Shift + Alt + click the object
 
-​       物体旋转90°：按住Alt再点击想让其旋转的物体
+Ambient light: ⬆️ press ‘=’   ⬇️ press ‘-’
 
-​       动画旋转效果：同时按住Shift+Alt再点击想让其动画旋转的物体（旋转过程中必须始终按住Shift+Alt） 
+Change the place of the light source: i k j l m n
 
-​       减弱环境光：按住’-’
+:four_leaf_clover:**Other tips**
 
-​       增强环境光：按住’+’
+1. When you input color, you can input the color name directly like blue, yellow, pink, etc. This website indicates the color names that is recognized by Block <http://www.w3school.com.cn/cssref/css_colornames.asp>  You can also input '#' + RGB value, like #00ffff. 
+2. When you change the light color, you must input "0x" + rgb value, eg:  0x00ffff
 
-​       改变光源位置：i k j l n m 
-
-​       转换视点：w a s d 
-
-:four_leaf_clover:**其他注意事项**
-
-​       1. 在输入体素的颜色的时候，可以直接输入颜色名，也可以用#之后跟上相应的RGB值来指定颜色例如#00ffff。可以在这个网站上查看支持的颜色名字<http://www.w3school.com.cn/cssref/css_colornames.asp> 
-
-​       2. 在编辑光源颜色的时候，输入颜色的格式必须是0x之后跟上相应的RGB值，例如0x00ffff
-
-:cherry_blossom:**可以实现的简单效果**
+:cherry_blossom:**Some examples**
 
 ![](https://github.com/zjulzy/block/blob/master/image/result1.PNG?raw=true)
 
