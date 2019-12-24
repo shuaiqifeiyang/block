@@ -94,8 +94,8 @@ function onDocumentMouseMove( event ) {
 
     //We should set the mouse position reference coordinate is the left side of the html block
     //instead of the left side of the window
-    var x=event.clientX-440;
-    var y=event.clientY-30;
+    var x=event.clientX;
+    var y=event.clientY;
     mouse.set( ( x / width ) * 2 - 1, - ( y / height ) * 2 + 1 );
     raycaster.setFromCamera( mouse, camera );
 
@@ -116,8 +116,8 @@ function onDocumentMouseDown( event ) {
 
     //We should set the mouse position reference coordinate is the left side of the html block
     //instead of the left side of the window
-    var x=event.clientX-440;
-    var y=event.clientY-30;
+    var x=event.clientX;
+    var y=event.clientY;
     mouse.set( ( x / width ) * 2 - 1, - ( y / height ) * 2 + 1 );
 
     raycaster.setFromCamera( mouse, camera );

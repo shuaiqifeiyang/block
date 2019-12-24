@@ -1,37 +1,41 @@
-.left_block{
-    margin: 20px;
-    width: 370px;
-    height: 1100px;
-    float: left;
-
+body{
+    margin: 0px;
 }
-
+.left_block{
+    width: 1200px;
+    height: 800px;
+    float: left;
+}
+.canvas{
+    height: 800px;
+    width: 1200px;
+}
 .middle_block{
     margin: 20px;
-    width: 1800px;
-    height: 1080px;
+    max-width: 400px;
     float: left;
-
 }
 
-.canvas{
-    height: 1050px;
-    width: 1800px;
+.block_head{
+    margin-bottom: 10px;
+    text-align: center;
+    height:20px;
+    font-size:20px;
+    max-width: 400px;
 }
-
+.red{
+    color: red;
+}
 button{
-    margin: 10px;
-    width: 100px;
-    height: 50px;
+    margin: 2px;
+    width: 83px;
+    min-height: 25px;
     border-radius:5px;
     background: #00aaff;
     color: white;
     border: none;
 }
 input{
-    width: 300px;
+    width: 389px;
 }
-/*button :focus{
-    outline: none;
-    box-shadow: 0 0 8px #33bbff;
-}*/
+

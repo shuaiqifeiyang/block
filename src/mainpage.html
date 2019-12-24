@@ -9,43 +9,53 @@
 </head>
 
 <body>
+    
     <div class="left_block">
+        <div class="canvas" id="canvas_frame">
+        </div>
+    </div>
+    
+    <div class="middle_block">
+        <div class="block_head"> Block——to create your buildings
+        </div>
         <div class="model">
             <div class="texture">
 
             </div>
-            <p>颜色(输入示例：blue或#0000ff)</p>
+            <div> Change the view: <span class="red">w a s d</span> </div>
+            <div> Delete object: <span class="red"> press Shift + click the object </span> </div>
+            <div> Rotate object by 90°: <span class="red"> press Alt + click the object </span> </div>
+            <div> Rotate object: <span class="red"> press Shift + Alt + click the object </span> </div>
+            <div> Ambient light: ⬆️<span class="red"> press ‘=’ </span> &nbsp &nbsp ⬇️ <span class="red"> press ‘-’ </span></div>
+            <div> Change the place of the light source: <span class="red">i k j l m n</span></div>
+            <div> Please be patient if you want to draw dragons and rabbits</div>
+
+            <p>Color (eg：blue or #0000ff)</p>
             <input id="color" name="color" type="text" />
-            <p>形状</p>
-            <button onclick="addcube()">正方体</button>
-            <button onclick="addball() ">球</button>
-            <button onclick="addcylinder() ">圆柱</button>
-            <button onclick="addcone() ">圆锥</button>
-            <button onclick="addtruncated() ">圆台</button>
-            <button onclick="addoctahedron() ">正八面体</button>
-            <button onclick="bunny()">兔子</button>
-            <button onclick="dragon()">龙</button>
-            <p>纹理</p>
-            <button onclick="notexture()">无纹理</button>
-            <button onclick="drape()">砖块</button>
-            <button onclick="water()">水纹</button>
-            <button onclick="granite()">花岗岩</button>
-            <button onclick="grass()">草</button>
-            <button onclick="solid()">泥</button>
-            <p>光源颜色(s输入示例:0xff0000)</p>
+            <p>Shape</p>
+            <button onclick="addcube()">Cube</button>
+            <button onclick="addball() ">Sphere</button>
+            <button onclick="addcylinder() ">Cylinder</button>
+            <button onclick="addcone() ">Cone</button>
+            <button onclick="addtruncated() ">Trancated</button>
+            <button onclick="addoctahedron() ">Octahedron</button>
+            <button onclick="bunny()">Bunny</button>
+            <button onclick="dragon()">Dragon</button>
+            <p>Texture</p>
+            <button onclick="notexture()">None</button>
+            <button onclick="drape()">Block</button>
+            <button onclick="water()">Water</button>
+            <button onclick="granite()">Rock</button>
+            <button onclick="grass()">Grass</button>
+            <button onclick="solid()">Solid</button>
+            <p>Light colot(eg:0xff0000)</p>
             <input id="light_color" name="light_color" type="text" />
-            <button onclick="change_ambientlight_color()">改变环境光的颜色</button>
-            <button onclick="change_direction_color()">改变平行光的颜色</button>
-            <p>调整大小</p>
-            <button onclick="bigger()">放大</button>
-            <button onclick="smaller()">缩小</button>
-            <p>删除物体：按住Shift再点击物体</p>
-            <p>旋转物体90°：按住Alt再点击物体</p>
-            <p>动画旋转效果：同时按住Shift+Alt：</p>
-            <p>减弱环境光:-  增强环境光:=</p>
-            <p>改变光源位置: i k j l n m</p>
-            <p>转换视点: w a s d</p>
-            <p>画兔子和龙需要耐心等待</p>
+            <button onclick="change_ambientlight_color()">Change ambientlight color</button>
+            <button onclick="change_direction_color()">Change direction light color</button>
+            <p>Change Size</p>
+            <button onclick="bigger()">Increase</button>
+            <button onclick="smaller()">Decrease</button>
+            
 
         </div>
         <div class="object">
@@ -53,10 +63,7 @@
         </div>
     </div>
 
-    <div class="middle_block">
-        <div class="canvas" id="canvas_frame">
-        </div>
-    </div>
+    
 
 </body>
 
